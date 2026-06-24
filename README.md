@@ -33,11 +33,11 @@ It wrote the code, ran away, and now the game is unplayable.
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. Select difficulty level (Easy, Medium, Hard)
+2. Guess the secret number that is between the given range. Submit it.
+3. If the game returns "Too Low" or "Too High", the secret number is higher and lower than guess respectively. Make another guess while attempts are still available.
+4. If guessed correctly, you win. If not, game over.
+5. Press "New Game" for another secret number or update the difficulty level to your liking.
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
@@ -47,6 +47,17 @@ Describe your fixed game in numbered steps so a reader can follow along without 
 # Paste your pytest output here, e.g.:
 # pytest tests/
 # ========================= X passed in 0.XXs =========================
+
+============= test session starts =============
+platform win32 -- Python 3.14.0, pytest-9.0.2, pluggy-1.6.0
+rootdir: C:\Users\mahir\OneDrive\Documents\CS\CodePath\AI_110\ai110-module1show-gameglitchinvestigator-starter
+plugins: anyio-4.12.1, Faker-40.4.0, requests-mock-1.12.1
+collected 3 items                              
+
+tests\test_game_logic.py ...             [100%]
+
+============== 3 passed in 0.16s ==============
+
 ```
 
 ## 🚀 Stretch Features
